@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>
+		Копирайтер Жанна Петросян
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+  
+</head>
+
+<body>
+
+	<nav class="topnav" id="myTopnav"> 
+
+
+
+		<a href="#scroll" class="active">Главная</a>
+		<a href="#scroll1">Портфолио</a>
+		<a href="#scroll2">Расценки</a>
+		<a href="#scroll3">Контакты</a>
+    <a href="javascript:void(0);" onclick="myFunction()" class="icon">&#9776;</a>
+
+  </nav>
+
+	<div id="scroll" class="sect sectOne">
+		<div class="text">
+		<p class="name">Жанна Петросян</p>
+		<hr>
+		<p class="prof">SEO - Копирайтер</p>
+	    </div>
+
+
+	</div>
+	<div id="scroll1" class="subSection first">
+
+  <div class="row">
+  <div class="column">
+    <img src="images/img1.png" style="width:90% ; " onclick="openModal();currentSlide(1)" class="hover-shadow cursor one" >
+
+    <p style="color: white; margin-top:16px; font-size: 80%" class="one">тексты для компании "МОДУЛЬ"</p>
+
+  </div>
+  <div class="column">
+    <img src="images/img2.png" style="width:90%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <p style="color: white; margin-top:16px; font-size: 80%" >100 дней. Авторский проект Константина Довлатова</p>
+  </div>
+  <div class="column">
+    <img src="images/img3.png" style="width:90%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor one" >
+    <p style="color: white; margin-top:16px; font-size: 80%" class="one">тексты для magic-glance</p>
+  </div>
+  
+  <div class="column">
+    <img src="images/img55.png" style="width:90%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  </div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo9.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo7.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="images/photo8.png" style="width:100%">
+    </div>
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img1.png" style="width:95%;" onclick="currentSlide(1)" alt="Скриншот текста">
+      <p style="color: white; margin-top:16px; margin-bottom: 36px;font-size: 14px ; border:0px solid white; padding-right: 8px;" class="demo p">тексты для компании "МОДУЛЬ"</p>
+    </div>
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img2.png" style="width:95%" onclick="currentSlide(2)" alt="Скриншот текста">
+      <p style="color: white; margin-top:16px; margin-bottom: 18px; font-size: 14px; border:0px solid white; padding-right: 8px;" class="demo p">100 дней. Авторский проект Константина Довлатова</p>
+    </div>
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img3.png" style="width:95%" onclick="currentSlide(3)" alt="Скриншот текста">
+      <p style="color: white; margin-top:16px; margin-bottom: 36px;font-size: 14px ; border:0px solid white; padding-right: 8px;" class="demo p">тексты для magic-glance</p>
+    </div>
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img9.png" style="width:95%" onclick="currentSlide(4)" alt="Скриншот текста">
+      <p style="color: white; margin-top:16px; margin-bottom: 36px;font-size: 14px; border:0px solid white; padding-right: 8px;" class="demo p">тексты для компании ma-tuning</p>
+    </div>
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img5.png" style="width:95%" onclick="currentSlide(5)" alt="Скриншот текста" >
+      <p style="color: white; margin-top:16px; font-size: 14px; border:0px solid white; padding-right: 8px;" class="demo p">тексты для компании mebelcheap</p>
+    </div>
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img6.png" style="width:95%" onclick="currentSlide(6)" alt="Скриншот текста" >
+      <p style="color: white; margin-top:16px; font-size: 14px; border:0px solid white; padding-right: 8px; " class="demo p">Научное шоу сумасшедшего профессора Николя nik-show.ru</p>
+    </div>
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img7.png" style="width:95%" onclick="currentSlide(7)" alt="Скриншот текста" >
+      <p style="color: white; margin-top:16px; font-size: 14px; border:0px solid white; padding-right: 8px;" class="demo p">Компания Green Office по озеленению ресторанов и кафе</p>
+    </div>
+    <div class="column" style="border:0px solid white">
+      <img class="demo cursor" src="images/img8.png" style="width:95%" onclick="currentSlide(8)" alt="Скриншот текста" >
+      <p style="color: white; margin-top:16px; font-size: 14px; border:0px solid white; padding-right: 8px;" class="demo p">Компания akpp-remontnik по ремонту автомобилей</p>
+    </div>
+    
+    
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    
+    if (x.className == "topnav") {
+        x.className += " responsive";
+        
+
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+
+	</div>
+	<div id="scroll2" class="sect sectTwo">
+
+  <div class="box">
+  <p>
+   
+Создание продающего SEO-контента - кропотливое занятие. Но!... любимое Улыбка.
+
+Чтобы не обидеть заказчика и собственно себя тоже, предлагается цена 500 р за 1000 зн/бп.
+
+Стоимость неокончательная, может изменяться, как в меньшую, так и в большую сторону.
+
+Могу заверить, что в отношении цены всегда сможем договориться.
+
+  </p>
+  </div>
+
+  </div>
+	<div id="scroll3" class="subSection second" style="color:white; padding-top: 120px; text-align: center; margin:0 auto;">
+
+  <h3 >контакты</h3>
+
+  <p>ICQ
+- 560 914 563 </p>
+ 
+ 
+<p>почта: janna.petrosyan@rambler.ru</p>
+ 
+
+<p>скайп: artykulartykul</p>
+   
+
+  </div>
+
+  
+
+
+</body>
+
+</html>
